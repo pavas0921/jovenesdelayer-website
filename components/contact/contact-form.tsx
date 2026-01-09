@@ -25,7 +25,6 @@ export function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
     setIsSubmitting(false);
@@ -46,16 +45,21 @@ export function ContactForm() {
   if (isSubmitted) {
     return (
       <Card className="bg-card border-border">
-        <CardContent className="p-8 text-center" role="alert">
+        <CardContent
+          className="p-8 text-center"
+          role="alert"
+          aria-live="polite"
+        >
           <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
             <CheckCircle className="h-8 w-8 text-primary" />
           </div>
           <h3 className="text-2xl font-bold text-card-foreground mb-4">
-            ¡Mensaje Enviado!
+            Mensaje enviado al Hogar Geriátrico Jóvenes del Ayer
           </h3>
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            Gracias por contactarnos. Hemos recibido su mensaje y nos pondremos
-            en contacto con usted en las próximas 24 horas.
+            Gracias por contactarnos. Hemos recibido su solicitud de información
+            sobre el cuidado de adultos mayores y nos comunicaremos con usted en
+            las próximas 24 horas.
           </p>
           <Button
             onClick={() => {
@@ -78,18 +82,31 @@ export function ContactForm() {
   }
 
   return (
-    <Card className="bg-card border-border">
+    <Card
+      className="bg-card border-border"
+      role="form"
+      aria-labelledby="contact-form-title"
+      aria-describedby="contact-form-description"
+    >
       <CardHeader>
-        <CardTitle className="text-2xl font-bold text-card-foreground">
-          Envíenos un Mensaje
+        <CardTitle
+          id="contact-form-title"
+          className="text-2xl font-bold text-card-foreground"
+        >
+          Formulario de Contacto – Hogar Geriátrico
         </CardTitle>
-        <p className="text-muted-foreground">
-          Complete el formulario y nos pondremos en contacto con usted a la
-          brevedad.
+        <p id="contact-form-description" className="text-muted-foreground">
+          Complete este formulario para recibir información sobre nuestros
+          servicios de cuidado para adultos mayores o para agendar una visita.
         </p>
       </CardHeader>
       <CardContent>
-        <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-6"
+          noValidate
+          aria-label="Formulario de contacto hogar geriátrico"
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="name" className="text-card-foreground">
@@ -103,13 +120,14 @@ export function ContactForm() {
                 autoComplete="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Su nombre"
+                placeholder="Su nombre completo"
+                aria-required="true"
                 className="bg-background border-input"
               />
             </div>
             <div className="space-y-2">
               <Label htmlFor="phone" className="text-card-foreground">
-                Teléfono *
+                Teléfono de contacto *
               </Label>
               <Input
                 id="phone"
@@ -119,7 +137,8 @@ export function ContactForm() {
                 autoComplete="tel"
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder="Su número de teléfono"
+                placeholder="Número de teléfono"
+                aria-required="true"
                 className="bg-background border-input"
               />
             </div>
@@ -137,7 +156,8 @@ export function ContactForm() {
               autoComplete="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="su@correo.com"
+              placeholder="correo@ejemplo.com"
+              aria-required="true"
               className="bg-background border-input"
             />
           </div>
@@ -152,6 +172,7 @@ export function ContactForm() {
               value={formData.relation}
               onChange={handleChange}
               className="w-full h-10 px-3 rounded-md border border-input bg-background text-foreground"
+              aria-label="Relación con el adulto mayor"
             >
               <option disabled value="">
                 Seleccione una opción
@@ -176,7 +197,8 @@ export function ContactForm() {
               required
               value={formData.message}
               onChange={handleChange}
-              placeholder="Cuéntenos sobre su situación y qué tipo de cuidado necesita para su ser querido..."
+              placeholder="Cuéntenos sobre la situación del adulto mayor y el tipo de cuidado que necesita..."
+              aria-required="true"
               className="bg-background border-input min-h-[150px]"
             />
           </div>
@@ -191,7 +213,7 @@ export function ContactForm() {
               "Enviando..."
             ) : (
               <>
-                Enviar Mensaje
+                Enviar mensaje
                 <Send className="ml-2 h-4 w-4" />
               </>
             )}
@@ -199,7 +221,7 @@ export function ContactForm() {
 
           <p className="text-xs text-muted-foreground text-center">
             Al enviar este formulario, acepta nuestra política de privacidad y
-            el uso de sus datos para responder a su solicitud.
+            el uso de sus datos para responder a su solicitud de información.
           </p>
         </form>
       </CardContent>

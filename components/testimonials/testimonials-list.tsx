@@ -1,6 +1,6 @@
-import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
-import { Quote, Star } from "lucide-react"
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
+import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
@@ -51,42 +51,80 @@ const testimonials = [
       "Lo que más valoro es la comunicación constante. Siempre me mantienen al tanto de cómo está mi madre, me envían fotos de las actividades y puedo llamar en cualquier momento. Esa transparencia genera mucha confianza.",
     date: "Residente desde 2022",
   },
-]
+];
 
 export function TestimonialsList() {
   return (
-    <section className="py-20 bg-background">
+    <section
+      className="py-20 bg-background"
+      aria-label="Testimonios de familias del hogar geriátrico Jóvenes del Ayer"
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-card border-border hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <Quote className="h-10 w-10 text-primary/20 mb-4" />
-                <p className="text-card-foreground mb-6 leading-relaxed italic">{`"${testimonial.quote}"`}</p>
-                <div className="flex items-center gap-2 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-accent text-accent" />
-                  ))}
-                </div>
-                <div className="flex items-center gap-4 pt-4 border-t border-border">
-                  <Image
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.name}
-                    width={56}
-                    height={56}
-                    className="rounded-full object-cover"
-                  />
-                  <div>
-                    <p className="font-semibold text-card-foreground">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.relation}</p>
-                    <p className="text-xs text-primary">{testimonial.date}</p>
+            <article key={index} itemScope itemType="https://schema.org/Review">
+              <meta itemProp="reviewRating" content="5" />
+              <meta
+                itemProp="itemReviewed"
+                content="Hogar geriátrico Jóvenes del Ayer"
+              />
+
+              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <Quote className="h-10 w-10 text-primary/20 mb-4" />
+
+                  <blockquote
+                    className="text-card-foreground mb-6 leading-relaxed italic"
+                    itemProp="reviewBody"
+                  >
+                    “{testimonial.quote}”
+                  </blockquote>
+
+                  <div
+                    className="flex items-center gap-2 mb-4"
+                    aria-label="Calificación de 5 estrellas"
+                  >
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="h-4 w-4 fill-accent text-accent"
+                      />
+                    ))}
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+
+                  <div className="flex items-center gap-4 pt-4 border-t border-border">
+                    <Image
+                      src={testimonial.image || "/placeholder.svg"}
+                      alt={`Testimonio de ${testimonial.name}, ${testimonial.relation}`}
+                      width={56}
+                      height={56}
+                      loading="lazy"
+                      className="rounded-full object-cover"
+                      itemProp="image"
+                    />
+                    <div
+                      itemProp="author"
+                      itemScope
+                      itemType="https://schema.org/Person"
+                    >
+                      <p
+                        className="font-semibold text-card-foreground"
+                        itemProp="name"
+                      >
+                        {testimonial.name}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        {testimonial.relation}
+                      </p>
+                      <p className="text-xs text-primary">{testimonial.date}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </article>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
