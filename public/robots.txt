@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://tuhogargeriatricomedellin.com/sitemap.xml
+
+# Google específico
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Otros bots
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
