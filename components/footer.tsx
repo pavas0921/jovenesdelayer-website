@@ -64,8 +64,6 @@ export function Footer() {
                 <a
                   href="tel:+573001234567"
                   className="text-sm text-background/80 hover:text-accent transition-colors"
-                  aria-label="Llamar al hogar geriátrico Jóvenes del Ayer en Medellín"
-                  title="Llamar al hogar geriátrico en Medellín"
                 >
                   +57 300 123 4567
                 </a>
@@ -75,8 +73,6 @@ export function Footer() {
                 <a
                   href="mailto:info@jovenesdelayer.com"
                   className="text-sm text-background/80 hover:text-accent transition-colors"
-                  aria-label="Enviar correo al hogar geriátrico en Medellín"
-                  title="Correo hogar geriátrico en Medellín"
                 >
                   info@jovenesdelayer.com
                 </a>
@@ -90,10 +86,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-accent shrink-0" />
-                <div
-                  className="text-sm text-background/80"
-                  aria-label="Horario de visitas del hogar geriátrico en Medellín"
-                >
+                <div className="text-sm text-background/80">
                   <p>Lunes a Viernes: 9am - 6pm</p>
                   <p>Sábados y Domingos: 10am - 5pm</p>
                 </div>
@@ -105,29 +98,25 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-background/20">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-background/60">
-              © {new Date().getFullYear()} Jóvenes del Ayer. Todos los derechos
-              reservados.
-            </p>
-            <div className="flex gap-6">
-              <Link
-                href="/privacidad"
-                className="text-sm text-background/60 hover:text-accent transition-colors"
-                aria-label="Política de privacidad del hogar geriátrico en Medellín"
-              >
-                Política de Privacidad
-              </Link>
-              <Link
-                href="/terminos"
-                className="text-sm text-background/60 hover:text-accent transition-colors"
-                aria-label="Términos y condiciones del hogar geriátrico en Medellín"
-              >
-                Términos y Condiciones
-              </Link>
-            </div>
-          </div>
+        {/* Bottom */}
+        <div className="mt-12 pt-8 border-t border-background/20 text-center">
+          <p className="text-sm text-background/60">
+            © {new Date().getFullYear()} Jóvenes del Ayer. Todos los derechos
+            reservados.
+          </p>
+
+          {/* 🔹 Atribución */}
+          <p className="mt-2 text-xs text-background/50">
+            Sitio web creado por{" "}
+            <a
+              href="https://insigniatecnologica.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent transition-colors"
+            >
+              Insignia Tecnológica
+            </a>
+          </p>
         </div>
       </div>
     </footer>
