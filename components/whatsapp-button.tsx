@@ -2,12 +2,15 @@
 
 import { MessageCircle } from "lucide-react";
 
-export function WhatsAppButton() {
-  const phoneNumber = "573001234567";
+interface WhatsAppButtonProps {
+  phoneNumber?: string;
+  message?: string;
+}
 
-  const message =
-    "Hola, me gustaría recibir información sobre el hogar geriátrico Jóvenes del Ayer en Medellín y sus servicios para adultos mayores.";
-
+export function WhatsAppButton({
+  phoneNumber = "573001234567",
+  message = "Hola, me gustaría recibir información sobre el hogar geriátrico Jóvenes del Ayer en Medellín y sus servicios para adultos mayores.",
+}: WhatsAppButtonProps) {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
