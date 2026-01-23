@@ -56,25 +56,25 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                 <span className="text-sm text-background/80">
-                  Calle 45 #12-34, Barrio El Prado, Medellín, Colombia
+                  Calle 29 # 81A - 35 Belén la Palma, Medellín
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent shrink-0" />
                 <a
-                  href="tel:+573001234567"
+                  href="tel:+573165783244"
                   className="text-sm text-background/80 hover:text-accent transition-colors"
                 >
-                  +57 300 123 4567
+                  +57 316 578 32 44
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent shrink-0" />
                 <a
-                  href="mailto:info@jovenesdelayer.com"
+                  href="mailto:jovenesdelayermed@gmail.com"
                   className="text-sm text-background/80 hover:text-accent transition-colors"
                 >
-                  info@jovenesdelayer.com
+                  jovenesdelayermed@gmail.com
                 </a>
               </li>
             </ul>
@@ -92,9 +92,7 @@ export function Footer() {
                 </div>
               </li>
             </ul>
-            <p className="mt-4 text-sm text-background/60">
-              Atención administrativa las 24 horas para emergencias.
-            </p>
+  
           </div>
         </div>
 

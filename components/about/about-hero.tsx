@@ -31,7 +31,7 @@ export function AboutHero() {
 
           <div className="relative">
             <Image
-              src="/placeholder.svg?key=7rrr9"
+              src="/about-us.webp"
               alt="Equipo de cuidadores del hogar geriátrico Jóvenes del Ayer acompañando a adultos mayores en Medellín"
               width={600}
               height={500}

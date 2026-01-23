@@ -79,7 +79,7 @@ export function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-4">
           <Button variant="outline" size="sm" asChild>
             <a
-              href="tel:+573001234567"
+              href="tel:+573165783244"
               aria-label="Llamar al hogar geriátrico en Medellín"
               title="Llamar al hogar geriátrico en Medellín"
               className="flex items-center gap-2"
@@ -95,7 +95,7 @@ export function Header() {
             className="bg-primary text-primary-foreground hover:bg-primary/90"
           >
             <a
-              href="https://wa.me/573001234567?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20el%20hogar%20geriátrico%20en%20Medellín"
+              href="https://wa.me/573165783244?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20el%20hogar%20geriátrico%20en%20Medellín"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp hogar geriátrico en Medellín"

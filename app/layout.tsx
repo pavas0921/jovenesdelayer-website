@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
   // Descripción optimizada con keywords y llamada a acción
   description:
-    "Hogar geriátrico en Medellín con cuidado integral para adultos mayores. Atención médica 24/7, cuidado para Alzheimer, actividades recreativas y alimentación balanceada. Ambiente familiar en El Poblado, Medellín. ¡Visítenos!",
+    "Hogar geriátrico en Medellín con cuidado integral para adultos mayores. Atención médica 24/7, cuidado para Alzheimer y Parkinson, actividades recreativas y alimentación balanceada. Ambiente familiar en El Poblado, Medellín. ¡Visítenos!",
 
   // Keywords mejoradas para Medellín
   keywords: [
@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     "cuidado ancianos Medellín",
     "asilo de ancianos Medellín",
     "cuidado para Alzheimer Medellín",
+    "cuidado para Parkinson Medellín",
     "geriátrico El Poblado",
     "casa de reposo Medellín",
     "atención geriátrica 24 horas",
@@ -191,9 +192,9 @@ const seniorHousingSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Cuidado 24/7 para Alzheimer",
+          name: "Cuidado 24/7 para Alzheimer y Parkinson",
           description:
-            "Atención especializada para adultos mayores con Alzheimer",
+            "Atención especializada para adultos mayores con Alzheimer y Parkinson",
         },
       },
       {
@@ -361,7 +362,7 @@ export default function RootLayout({
               // WhatsApp flotante
               function addWhatsAppButton() {
                 const btn = document.createElement('a');
-                btn.href = 'https://wa.me/573001234567?text=Hola, me interesa información sobre el hogar geriátrico';
+                btn.href = 'https://wa.me/573165783244?text=Hola, me interesa información sobre el hogar geriátrico';
                 btn.target = '_blank';
                 btn.rel = 'noopener noreferrer';
                 btn.className = 'fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all';

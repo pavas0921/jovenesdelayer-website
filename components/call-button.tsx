@@ -5,7 +5,7 @@ import { Phone } from "lucide-react";
 export function CallButton() {
   return (
     <a
-      href="tel:+573001234567"
+      href="tel:+573165783244"
       onClick={() => {
         if (typeof window !== "undefined" && window.gtag) {
           window.gtag("event", "call_click", {

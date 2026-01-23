@@ -1,16 +1,14 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+
+# Evitar indexar APIs internas (pero permitir OG)
 Disallow: /api/
+Allow: /api/og/
 
-Sitemap: https://tuhogargeriatricomedellin.com/sitemap.xml
+Sitemap: https://jovenesdelayer.com/sitemap.xml
 
-# Google específico
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-# Otros bots
+# Bing
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 2

@@ -8,7 +8,7 @@ interface WhatsAppButtonProps {
 }
 
 export function WhatsAppButton({
-  phoneNumber = "573001234567",
+  phoneNumber = "573165783244",
   message = "Hola, me gustaría recibir información sobre el hogar geriátrico Jóvenes del Ayer en Medellín y sus servicios para adultos mayores.",
 }: WhatsAppButtonProps) {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(

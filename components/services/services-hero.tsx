@@ -32,7 +32,7 @@ export function ServicesHero() {
 
           <div className="relative">
             <Image
-              src="/professional-caregiver-helping-elderly-person-with.jpg"
+              src="/professional-caregiver-helping-elderly-person-with.webp"
               alt="Cuidador profesional brindando atención y apoyo a un adulto mayor en hogar geriátrico en Medellín"
               width={600}
               height={500}

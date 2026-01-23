@@ -53,7 +53,7 @@ export function OurStory() {
 
           <div className="order-1 lg:order-2 grid grid-cols-2 gap-4">
             <Image
-              src="/placeholder.svg?key=12nkz"
+              src="/enfermera-actividad-fisica-hogar-geriaitrico.webp"
               alt="Fundación del hogar geriátrico Jóvenes del Ayer en Medellín"
               width={280}
               height={350}
@@ -62,7 +62,7 @@ export function OurStory() {
             />
 
             <Image
-              src="/placeholder.svg?key=2y6mc"
+              src="/enfermera-cuidados-alimentacion.webp"
               alt="Instalaciones actuales del hogar geriátrico Jóvenes del Ayer en Medellín"
               width={280}
               height={350}

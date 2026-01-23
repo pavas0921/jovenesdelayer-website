@@ -15,7 +15,7 @@ import { CTASection } from "@/components/home/cta-section";
 export const metadata: Metadata = {
   title: "Sobre Nosotros | Jóvenes del Ayer – Hogar Geriátrico en Medellín",
   description:
-    "Conoce la historia, misión, valores y el equipo profesional de Jóvenes del Ayer, hogar geriátrico en Medellín con más de 15 años de experiencia en el cuidado integral del adulto mayor.",
+    "Conoce la historia, misión, valores y el equipo profesional de Jóvenes del Ayer, hogar geriátrico en Medellín con más de 20 años de experiencia en el cuidado integral del adulto mayor.",
   alternates: {
     canonical: "https://jovenesdelayer.com/nosotros",
   },
@@ -40,7 +40,7 @@ const aboutSchema = {
       addressRegion: "Antioquia",
       addressCountry: "CO",
     },
-    telephone: "+57 300 123 4567",
+    telephone: "+57 316 578 32 44",
     employee: [
       {
         "@type": "Person",

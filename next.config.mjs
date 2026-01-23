@@ -1,6 +1,9 @@
 // next.config.js - VERSIÓN FINAL OPTIMIZADA
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  devIndicators: {
+    buildActivity: false,
+  },
   // === SEO CRÍTICO ===
   trailingSlash: false, // Recomendado para Colombia
   compress: true,

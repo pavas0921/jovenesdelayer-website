@@ -17,16 +17,6 @@ export const metadata: Metadata = {
   description:
     "Hogar geriátrico en Medellín especializado en el cuidado integral de adultos mayores y pacientes con Alzheimer. Atención médica 24/7, actividades recreativas y acompañamiento profesional.",
 
-  keywords: [
-    "hogar geriátrico Medellín",
-    "residencia adultos mayores Medellín",
-    "cuidado Alzheimer Medellín",
-    "hogar geriátrico El Prado",
-    "casa de reposo Medellín",
-    "atención geriátrica 24 horas",
-    "Jóvenes del Ayer Medellín",
-  ].join(", "),
-
   alternates: {
     canonical: "https://jovenesdelayer.com",
   },
@@ -51,45 +41,65 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jóvenes del Ayer – Hogar Geriátrico en Medellín",
     description:
-      "Cuidado especializado para adultos mayores en Medellín. Contáctanos por WhatsApp.",
+      "Cuidado especializado para adultos mayores en Medellín. Atención 24/7.",
+    images: ["https://jovenesdelayer.com/og-home.jpg"],
   },
 };
 
 // ===================================
-// 🧠 SCHEMA JSON-LD – LOCAL BUSINESS
+// 🧠 SCHEMA JSON-LD – MEDICAL BUSINESS
 // ===================================
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  additionalType: "https://schema.org/SeniorHousing",
+  "@type": "MedicalBusiness",
+  additionalType: [
+    "https://schema.org/NursingHome",
+    "https://schema.org/SeniorHousing",
+  ],
   name: "Jóvenes del Ayer",
   url: "https://jovenesdelayer.com",
-  telephone: "+573001234567",
+  telephone: "+573165783244",
+
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Calle 45 #12-34, Barrio El Prado",
+    streetAddress: "Calle 29 # 81A - 35",
     addressLocality: "Medellín",
     addressRegion: "Antioquia",
     addressCountry: "CO",
   },
+
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 6.244203,
+    longitude: -75.581211,
+  },
+
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "18:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Saturday", "Sunday"],
-      opens: "10:00",
-      closes: "17:00",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
     },
   ],
+
   areaServed: {
     "@type": "AdministrativeArea",
     name: "Medellín, Antioquia",
   },
+
+  sameAs: [
+    "https://www.facebook.com/jovenesdelayer",
+    "https://www.instagram.com/jovenesdelayer",
+  ],
 };
 
 export default function HomePage() {
@@ -115,9 +125,9 @@ export default function HomePage() {
 
       <Footer />
 
-      {/* ✅ BOTÓN WHATSAPP – SEO + CONVERSIÓN */}
+      {/* ✅ BOTÓN WHATSAPP – CONVERSIÓN */}
       <WhatsAppButton
-        phoneNumber="573001234567"
+        phoneNumber="573165783244"
         message="Hola, vi su página web y me interesa información sobre el hogar geriátrico Jóvenes del Ayer en Medellín"
       />
     </>

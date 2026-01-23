@@ -7,7 +7,7 @@ const features = [
   "Personal altamente capacitado y comprometido con el cuidado geriátrico en Medellín",
   "Instalaciones modernas y adaptadas para adultos mayores en Antioquia",
   "Ambiente familiar y acogedor en nuestro hogar geriátrico Medellín",
-  "Programas personalizados de cuidado para Alzheimer y tercera edad",
+  "Programas personalizados de cuidado para Alzheimer, Parkinson y tercera edad",
   "Comunicación constante con las familias de Medellín y Antioquia",
 ];
 

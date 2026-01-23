@@ -6,65 +6,65 @@ import { X } from "lucide-react";
 
 const galleryImages = [
   {
-    src: "/placeholder.svg?key=t6m3h",
-    alt: "Sala de estar principal",
+    src: "/enfermera-actividad-fisica-hogar-geriaitrico.webp",
+    alt: "Enfermera actividad física hogar geriatrico",
     category: "Instalaciones",
   },
   {
-    src: "/placeholder.svg?key=k42a9",
-    alt: "Habitación privada",
+    src: "/enfermera-cuidados-alimentacion.webp",
+    alt: "Enfermera cuidados alimentacion hogar geriatrico",
     category: "Instalaciones",
   },
   {
-    src: "/placeholder.svg?key=qpz2s",
-    alt: "Comedor principal",
+    src: "/professional-caregiver-helping-elderly-person-with.webp",
+    alt: "Enfermera cuidados hogar geriatrico",
     category: "Instalaciones",
   },
   {
-    src: "/placeholder.svg?key=lsnpm",
-    alt: "Jardín exterior",
+    src: "/actividad-fisica-hogar-geriatrico.webp",
+    alt: "Actividad física hogar geriatrico",
     category: "Instalaciones",
   },
   {
-    src: "/placeholder.svg?key=8c94l",
-    alt: "Taller de manualidades",
+    src: "/alegria-hogar-geriatrico.webp",
+    alt: "Alegria hogar geriatrico",
     category: "Actividades",
   },
   {
-    src: "/placeholder.svg?key=40abp",
-    alt: "Sesión de fisioterapia",
+    src: "/cuidados-hogar-geriatrico.webp",
+    alt: "Cuidados hogar geriatrico",
     category: "Actividades",
   },
   {
-    src: "/placeholder.svg?key=2s0id",
-    alt: "Celebración de cumpleaños",
+    src: "/espiritualidad-hogar-geriatrico.webp",
+    alt: "Espiritualidad hogar geriatrico",
     category: "Celebraciones",
   },
   {
-    src: "/placeholder.svg?key=dqsq8",
-    alt: "Día del Adulto Mayor",
+    src: "/terapeuta-hogar-geriatrico.webp",
+    alt: "Terapeuta hogar geriatrico",
     category: "Celebraciones",
   },
-  {
-    src: "/placeholder.svg?key=wdm6a",
-    alt: "Musicoterapia",
-    category: "Actividades",
-  },
-  {
-    src: "/placeholder.svg?key=mphgq",
-    alt: "Sala de enfermería",
-    category: "Instalaciones",
-  },
-  {
-    src: "/placeholder.svg?key=hzg2v",
-    alt: "Área de recreación",
-    category: "Instalaciones",
-  },
-  {
-    src: "/placeholder.svg?key=qicpt",
-    alt: "Visita de familiares",
-    category: "Vida diaria",
-  },
+  // {
+  //   src: "/placeholder.svg?key=wdm6a",
+  //   alt: "Musicoterapia",
+  //   category: "Actividades",
+  // },
+  // {
+  //   src: "/placeholder.svg?key=mphgq",
+  //   alt: "Sala de enfermería",
+  //   category: "Instalaciones",
+  // },
+  // {
+  //   src: "/placeholder.svg?key=hzg2v",
+  //   alt: "Área de recreación",
+  //   category: "Instalaciones",
+  // },
+  // {
+  //   src: "/placeholder.svg?key=qicpt",
+  //   alt: "Visita de familiares",
+  //   category: "Vida diaria",
+  // },
 ];
 
 const categories = [

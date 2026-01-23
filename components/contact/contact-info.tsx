@@ -25,9 +25,9 @@ export function ContactInfo() {
               asChild
             >
               <a
-                href="tel:+573001234567"
+                href="tel:+573165783244"
                 className="flex items-center justify-center gap-2"
-                aria-label="Llamar ahora al +57 300 123 4567"
+                aria-label="Llamar ahora al +57 316 578 32 44"
               >
                 <Phone className="h-4 w-4" />
                 Llamar Ahora
@@ -39,7 +39,7 @@ export function ContactInfo() {
               asChild
             >
               <a
-                href="https://wa.me/573001234567?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20el%20hogar%20geriátrico%20Jóvenes%20del%20Ayer"
+                href="https://wa.me/3165783244?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20el%20hogar%20geriátrico%20Jóvenes%20del%20Ayer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2"
@@ -74,9 +74,9 @@ export function ContactInfo() {
                   Dirección
                 </h4>
                 <address className="not-italic text-muted-foreground">
-                  Calle 45 #12-34, Barrio El Prado
+                  Calle 29 # 81A - 35
                   <br />
-                  Medellín, Antioquia
+                  Belén la Palma, Medellín
                 </address>
               </div>
             </div>
@@ -91,19 +91,19 @@ export function ContactInfo() {
                 </h4>
                 <p className="text-muted-foreground">
                   <a
-                    href="tel:+573001234567"
+                    href="tel:+573165783244"
                     className="hover:text-primary transition-colors"
-                    aria-label="Llamar al celular o WhatsApp +57 300 123 4567"
+                    aria-label="Llamar al celular o WhatsApp +57 316 578 32 44"
                   >
-                    +57 300 123 4567 (Celular/WhatsApp)
+                    +57 316 578 32 44 (Celular/WhatsApp)
                   </a>
                   <br />
                   <a
-                    href="tel:+576012345678"
+                    href="tel:+573165783244"
                     className="hover:text-primary transition-colors"
-                    aria-label="Llamar al teléfono fijo +57 601 234 5678"
+                    aria-label="Llamar al teléfono fijo +57 316 578 32 44"
                   >
-                    +57 601 234 5678 (Fijo)
+                    +57 316 578 32 44
                   </a>
                 </p>
               </div>
@@ -119,11 +119,11 @@ export function ContactInfo() {
                 </h4>
                 <p className="text-muted-foreground">
                   <a
-                    href="mailto:info@jovenesdelayer.com"
+                    href="mailto:jovenesdelayermed@gmail.com"
                     className="hover:text-primary transition-colors"
-                    aria-label="Enviar correo a info@jovenesdelayer.com"
+                    aria-label="Enviar correo a jovenesdelayermed@gmail.com"
                   >
-                    info@jovenesdelayer.com
+                    jovenesdelayermed@gmail.com
                   </a>
                   <br />
                   <a
@@ -131,7 +131,7 @@ export function ContactInfo() {
                     className="hover:text-primary transition-colors"
                     aria-label="Enviar correo a admisiones@jovenesdelayer.com"
                   >
-                    admisiones@jovenesdelayer.com
+                    jovenesdelayermed@gmail.com
                   </a>
                 </p>
               </div>
@@ -146,11 +146,9 @@ export function ContactInfo() {
                   Horario de Atención
                 </h4>
                 <p className="text-muted-foreground">
-                  <strong>Oficina Administrativa:</strong>
+                  Lunes a Viernes: 9:00 AM - 4:00 PM
                   <br />
-                  Lunes a Viernes: 8:00 AM - 6:00 PM
-                  <br />
-                  Sábados: 9:00 AM - 1:00 PM
+                  Sábados: 9:00 AM - 12:00 PM
                   <br />
                   <br />
                   <strong>Visitas a Residentes:</strong>
@@ -160,9 +158,6 @@ export function ContactInfo() {
                   Sábados y Domingos: 10:00 AM - 5:00 PM
                   <br />
                   <br />
-                  <span className="text-primary">
-                    Atención 24/7 para emergencias
-                  </span>
                 </p>
               </div>
             </div>
@@ -189,7 +184,7 @@ export function ContactInfo() {
             asChild
           >
             <a
-              href="https://wa.me/573001234567?text=Hola,%20me%20gustaría%20agendar%20una%20visita%20para%20conocer%20las%20instalaciones%20de%20Jóvenes%20del%20Ayer"
+              href="https://wa.me/3165783244?text=Hola,%20me%20gustaría%20agendar%20una%20visita%20para%20conocer%20las%20instalaciones%20de%20Jóvenes%20del%20Ayer"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Agendar visita por WhatsApp"

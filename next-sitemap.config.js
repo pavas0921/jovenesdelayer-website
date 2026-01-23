@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://tuhogargeriatricomedellin.com', // Cambiar por tu dominio
+    siteUrl: 'https://jovenesdelayer.com', // Cambiar por tu dominio
     generateRobotsTxt: true,
     robotsTxtOptions: {
         policies: [
@@ -16,7 +16,7 @@ module.exports = {
             },
         ],
         additionalSitemaps: [
-            'https://tuhogargeriatricomedellin.com/sitemap-0.xml',
+            'https://jovenesdelayer.com/sitemap-0.xml',
         ],
     },
     exclude: ['/admin/*', '/api/*'],
@@ -30,6 +30,7 @@ module.exports = {
             '/': 1.0,
             '/servicios': 0.9,
             '/servicios/cuidado-alzheimer': 0.9,
+            '/servicios/cuidado-parkinson': 0.9,
             '/servicios/residencia-permanente': 0.9,
             '/contacto': 0.8,
             '/nosotros': 0.8,

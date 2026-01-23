@@ -10,7 +10,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/elderly-couple-holding-hands-in-beautiful-garden-w.jpg"
-          alt="Adultos mayores felices en hogar geriátrico Jóvenes del Ayer Medellín - Cuidado especializado para Alzheimer y tercera edad en Antioquia"
+          alt="Adultos mayores felices en hogar geriátrico Jóvenes del Ayer Medellín - Cuidado especializado para Alzheimer, Parkinson y tercera edad en Antioquia"
           fill
           className="object-cover"
           priority
@@ -24,7 +24,7 @@ export function HeroSection() {
         <div className="max-w-2xl">
           {/* Texto optimizado con keywords locales */}
           <p className="text-accent font-medium mb-4 tracking-wide uppercase text-sm">
-            Hogar Geriátrico en Medellín con más de 15 años de experiencia
+            Hogar Geriátrico en Medellín con más de 20 años de experiencia
           </p>
 
           {/* Título principal con keywords */}
@@ -36,8 +36,8 @@ export function HeroSection() {
           <p className="text-lg text-background/90 mb-8 leading-relaxed max-w-xl">
             En Jóvenes del Ayer ofrecemos un hogar geriátrico en Medellín donde
             cada adulto mayor recibe atención personalizada 24/7, cuidado
-            especializado para Alzheimer, y el respeto que merece. Somos familia
-            en Antioquia.
+            especializado para Alzheimer y Parkinson, y el respeto que merece.
+            Somos familia en Antioquia.
           </p>
 
           {/* Botones optimizados con URLs mejoradas */}
@@ -68,7 +68,7 @@ export function HeroSection() {
                 title="Llamar al hogar geriátrico Jóvenes del Ayer en Medellín"
               >
                 <Phone className="h-5 w-5" />
-                Llamar: +57 4 123 4567
+                Llamar: +57 316 578 32 44
               </a>
             </Button>
           </div>

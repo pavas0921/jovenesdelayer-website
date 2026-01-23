@@ -111,7 +111,7 @@ export function FAQ() {
               inquietudes.
             </p>
             <a
-              href="https://wa.me/573001234567?text=Hola,%20tengo%20una%20pregunta%20sobre%20el%20hogar%20geriátrico"
+              href="https://wa.me/3165783244?text=Hola,%20tengo%20una%20pregunta%20sobre%20el%20hogar%20geriátrico"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary font-medium hover:underline"

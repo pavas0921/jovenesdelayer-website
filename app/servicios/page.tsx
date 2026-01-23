@@ -109,7 +109,7 @@ export default function ServiciosPage() {
       <main>
         <ServicesHero />
         <ServicesList />
-        <CarePlans />
+        {/* <CarePlans /> */}
         <DailyActivities />
         <CTASection />
       </main>

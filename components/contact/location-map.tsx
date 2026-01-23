@@ -17,7 +17,7 @@ export function LocationMap() {
 
         <div className="aspect-video md:aspect-[21/9] rounded-2xl overflow-hidden border border-border shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8847711845!2d-75.5743!3d6.2442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429cfaeac7487%3A0x123456789abcdef!2sJóvenes%20del%20Ayer%20Hogar%20Geriátrico!5e0!3m2!1ses!2sco!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.093072442389!2d-75.60174275554198!3d6.227657291702426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429fde0e89a2d%3A0x5fb1fcead2f0886b!2sHogar%20geri%C3%A1trico%20j%C3%B3venes%20del%20ayer!5e0!3m2!1ses!2sco!4v1769184960902!5m2!1ses!2sco"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -25,12 +25,12 @@ export function LocationMap() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Ubicación de Jóvenes del Ayer Hogar Geriátrico en Medellín"
-          />
+          ></iframe>
         </div>
 
         <div className="mt-6 text-center">
           <a
-            href="https://maps.google.com/?q=Calle+45+12-34+Barrio+El+Prado+Medellín"
+            href="https://maps.app.goo.gl/rjSuk6W32EG5Ligf6"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:underline font-medium"

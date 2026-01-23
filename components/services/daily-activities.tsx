@@ -10,9 +10,12 @@ const schedule = [
   },
   {
     time: "10:00 AM",
+    activity: "Refrigerio de media mañana",
+  },
+  {
+    time: "11:00 AM",
     activity: "Actividades cognitivas y talleres terapéuticos",
   },
-  { time: "11:00 AM", activity: "Refrigerio de media mañana" },
   { time: "12:00 PM", activity: "Almuerzo nutritivo" },
   { time: "1:00 PM", activity: "Tiempo de descanso supervisado" },
   {

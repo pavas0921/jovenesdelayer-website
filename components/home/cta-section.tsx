@@ -54,11 +54,11 @@ export function CTASection() {
               Llámenos
             </h3>
             <a
-              href="tel:+573001234567"
+              href="tel:+573165783244"
               className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               itemProp="telephone"
             >
-              +57 300 123 4567
+              +57 316 578 32 44
             </a>
           </div>
 
@@ -74,11 +74,11 @@ export function CTASection() {
               Escríbanos
             </h3>
             <a
-              href="mailto:info@jovenesdelayer.com"
+              href="mailto:jovenesdelayermed@gmail.com"
               className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               itemProp="email"
             >
-              info@jovenesdelayer.com
+              jovenesdelayermed@gmail.com
             </a>
           </div>
 
@@ -99,9 +99,9 @@ export function CTASection() {
               Visítenos
             </h3>
             <p className="text-primary-foreground/80">
-              <span itemProp="streetAddress">Calle 45 #12-34</span>,{" "}
-              <span itemProp="addressLocality">Medellín</span>,{" "}
-              <span itemProp="addressRegion">Antioquia</span>
+              <span itemProp="streetAddress">Calle 29 # 81A - 35</span>,{" "}
+              <span itemProp="addressLocality">Belén la Palma</span>,{" "}
+              <span itemProp="addressRegion">Medellín</span>
             </p>
           </div>
         </div>
@@ -125,7 +125,7 @@ export function CTASection() {
             asChild
           >
             <a
-              href="https://wa.me/573001234567?text=Hola,%20me%20gustaría%20agendar%20una%20visita%20al%20hogar%20geriátrico%20Jóvenes%20del%20Ayer%20en%20Medellín"
+              href="https://wa.me/3165783244?text=Hola,%20me%20gustaría%20agendar%20una%20visita%20al%20hogar%20geriátrico%20Jóvenes%20del%20Ayer%20en%20Medellín"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Contactar por WhatsApp para agendar visita"
