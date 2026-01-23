@@ -51,27 +51,27 @@ export const metadata: Metadata = {
 // ===================================
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  additionalType: [
-    "https://schema.org/NursingHome",
-    "https://schema.org/SeniorHousing",
-  ],
+  "@type": ["LocalBusiness", "SeniorHousing"],
   name: "Jóvenes del Ayer",
   url: "https://jovenesdelayer.com",
+  image: "https://jovenesdelayer.com/logo.png",
   telephone: "+573165783244",
+  email: "contacto@jovenesdelayer.com",
+  priceRange: "$$$",
 
   address: {
     "@type": "PostalAddress",
     streetAddress: "Calle 29 # 81A - 35",
     addressLocality: "Medellín",
     addressRegion: "Antioquia",
+    postalCode: "050001",
     addressCountry: "CO",
   },
 
   geo: {
     "@type": "GeoCoordinates",
     latitude: 6.244203,
-    longitude: -75.581211,
+    longitude: -75.581212,
   },
 
   openingHoursSpecification: [
@@ -91,15 +91,47 @@ const localBusinessSchema = {
     },
   ],
 
-  areaServed: {
-    "@type": "AdministrativeArea",
-    name: "Medellín, Antioquia",
+  medicalSpecialty: "Geriatrics",
+
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Servicios Geriátricos",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Cuidado 24/7 para Alzheimer y Parkinson",
+          description: "Atención especializada para adultos mayores",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Residencia Permanente",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Estancias Temporales",
+        },
+      },
+    ],
   },
 
   sameAs: [
     "https://www.facebook.com/jovenesdelayer",
     "https://www.instagram.com/jovenesdelayer",
+    "https://www.linkedin.com/company/jovenes-del-ayer",
   ],
+
+  areaServed: {
+    "@type": "AdministrativeArea",
+    name: "Medellín, Antioquia",
+  },
 };
 
 export default function HomePage() {
