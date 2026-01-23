@@ -47,14 +47,6 @@ const nextConfig = {
   // === REDIRECCIONES PARA SEO ===
   async redirects() {
     return [
-      // Redireccionar www a no-www (o viceversa)
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.jovenesdelayer.com' }],
-        destination: 'https://jovenesdelayer.com/:path*',
-        permanent: true,
-      },
-      // Redirecciones de palabras clave
       {
         source: '/geriatrico-medellin',
         destination: '/servicios',
