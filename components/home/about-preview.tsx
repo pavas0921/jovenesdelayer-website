@@ -20,7 +20,7 @@ export function AboutPreview() {
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src="/caring-nurse-with-elderly-woman-smiling-warmly.jpg"
+                src="/enfermera-cuidados-alimentacion.webp"
                 alt="Cuidadora especializada con residente en hogar geriátrico Jóvenes del Ayer Medellín - Cuidado para adultos mayores"
                 width={300}
                 height={400}
@@ -28,7 +28,7 @@ export function AboutPreview() {
                 title="Cuidado especializado para adultos mayores en Medellín"
               />
               <Image
-                src="/elderly-people-doing-activities-together--painting.jpg"
+                src="/alegria-hogar-geriatrico.webp"
                 alt="Actividades recreativas para adultos mayores en hogar geriátrico Medellín - Terapia ocupacional tercera edad"
                 width={300}
                 height={400}
