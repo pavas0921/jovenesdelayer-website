@@ -89,12 +89,8 @@ export function DailyActivities() {
             </div>
           </div>
 
-          {/* HORARIO */}
-          <div
-            className="bg-card rounded-2xl p-8 border border-border shadow-sm"
-            itemScope
-            itemType="https://schema.org/Event"
-          >
+          {/* HORARIO (SIN SCHEMA EVENT) */}
+          <div className="bg-card rounded-2xl p-8 border border-border shadow-sm">
             <div className="flex items-center gap-3 mb-6">
               <Clock className="h-6 w-6 text-primary" aria-hidden="true" />
               <h3 className="text-xl font-semibold text-card-foreground">
@@ -104,23 +100,12 @@ export function DailyActivities() {
 
             <div className="space-y-4">
               {schedule.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex gap-4 items-start"
-                  itemProp="subEvent"
-                  itemScope
-                  itemType="https://schema.org/Event"
-                >
-                  <time
-                    className="text-sm font-medium text-primary min-w-[70px]"
-                    itemProp="startTime"
-                  >
+                <div key={index} className="flex gap-4 items-start">
+                  <time className="text-sm font-medium text-primary min-w-[70px]">
                     {item.time}
                   </time>
 
-                  <span className="text-card-foreground" itemProp="name">
-                    {item.activity}
-                  </span>
+                  <span className="text-card-foreground">{item.activity}</span>
                 </div>
               ))}
             </div>
