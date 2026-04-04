@@ -27,8 +27,8 @@ export function OurStory() {
               </p>
 
               <p>
-                Todo comenzó cuando nuestra fundadora, María del Carmen
-                Rodríguez, vivió en primera persona la dificultad de encontrar
+                Todo comenzó cuando nuestra fundadora, Luz Estela Higuita,
+                vivió en primera persona la dificultad de encontrar
                 un lugar digno para el cuidado de su madre. Esta experiencia dio
                 origen a un modelo de atención humana, empática y centrada en la
                 dignidad del adulto mayor.
@@ -43,7 +43,7 @@ export function OurStory() {
 
               <p>
                 Actualmente, Jóvenes del Ayer cuenta con un equipo
-                interdisciplinario de más de <strong>30 profesionales</strong>,
+                interdisciplinario de más de <strong>10 profesionales</strong>,
                 instalaciones modernas y adaptadas, y el reconocimiento de la
                 comunidad como un referente en el cuidado humanizado del adulto
                 mayor en Antioquia.

@@ -44,8 +44,8 @@ const aboutSchema = {
     employee: [
       {
         "@type": "Person",
-        name: "María del Carmen Rodríguez",
-        jobTitle: "Directora General y Fundadora",
+        name: "Luz Estela Higuita",
+        jobTitle: "Directora y Fundadora",
         worksFor: {
           "@type": "Organization",
           name: "Jóvenes del Ayer",

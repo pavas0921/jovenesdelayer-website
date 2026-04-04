@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const team = [
   {
-    name: "María del Carmen Rodríguez",
-    role: "Directora General y Fundadora",
+    name: "Luz Estela Higuita",
+    role: "Directora y Fundadora",
     image: "/professional-woman-director-60-years-old-portrait.jpg",
     description:
-      "Con más de 20 años de experiencia en geriatría, María del Carmen fundó Jóvenes del Ayer con la visión de crear un hogar geriátrico donde cada adulto mayor sea tratado con amor, respeto y dignidad.",
+      "Con más de 20 años de experiencia en geriatría, Luz Estella fundó Jóvenes del Ayer con la visión de crear un hogar geriátrico donde cada adulto mayor sea tratado con amor, respeto y dignidad.",
   },
   {
     name: "Dr. Andrés Martínez",
